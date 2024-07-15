@@ -1,0 +1,2 @@
+# uninstall
+rustup self uninstall
