@@ -27,6 +27,9 @@ data_type
 string
 - Rust에서 사용하는 문자열 타입에 대해서 소개합니다.
 
+function
+- Rust에서 사용하는 함수의 정의 그리고 사용법에 대해서 소개합니다.
+
 <br />
 <br />
 
