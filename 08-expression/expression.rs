@@ -1,6 +1,11 @@
 fn main() {
     let c = add(1, 2);
     println!("{}", c);
+
+    let number = 13;
+    let odd = if number % 2 == 0 { "even" } else { "odd" };
+    
+    println!("{}: {}", number, odd);
 }
  
 fn add(a: i32, b: i32) -> i32 {
