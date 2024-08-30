@@ -36,6 +36,17 @@ impl Mat2 {
         }
         ret
     }
+
+    fn inverse(self) -> Self {
+        let det = self.a * self.d - self.b * self.c;
+
+        Mat2 {
+            a: self.d / det,
+            b: -self.b / det,
+            c: -self.c / det,
+            d: self.a / det,
+        }
+    }
 }
 
 struct Vec2 {
@@ -78,6 +89,10 @@ fn main()
     };
 
     const FIBONACCI_VEC: Vec2 = Vec2 { a: 1, b: 0 };
+
+    println!("{}", (FIBONACCI_MAT.power(3) * FIBONACCI_VEC).get_upper());
+
+    FIBONACCI_MAT.inverse();
 
     println!("{}", (FIBONACCI_MAT.power(3) * FIBONACCI_VEC).get_upper());
 
