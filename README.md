@@ -29,6 +29,7 @@ string
 
 function
 - Rust에서 사용하는 함수의 정의 그리고 사용법에 대해서 소개합니다.
+- Imple까지 학습 후, 익힌 내용에 대해서 예제를 만들어봅니다.
 
 expression
 - 일상적으로 사용하는 statement와 다르게 Rust에서 사용하는 표현문에 대해서 소개합니다.
@@ -38,6 +39,12 @@ condition
 
 loop
 - Rust에서 사용하는 반복문에 대해서 소개합니다.
+
+struct
+- Rust에서 사용하는 구조체에 대해서 소개합니다.
+
+impl
+- 정의된 구조체에 대해 method를 사용하기 위한 impl에 대해서 소개합니다.
 
 
 <br />
