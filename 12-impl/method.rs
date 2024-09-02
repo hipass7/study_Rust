@@ -18,9 +18,15 @@ impl Person {
             println!("{}: inactive", self.id);
         }
     }
+
+    // &mut self : to change the field value
+    fn set_active(&mut self, is_active: bool) {
+        self.active = is_active;
+    }
 }
  
 fn main() {
     let p = Person::new(101, String::from("Tom"));
     p.display();
+    p.set_active(false);
 }
